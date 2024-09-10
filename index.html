@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Line Counter</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<h1>...Line Counter...</h1>
+		<form action="/count_lines" method="POST">
+			<label for="text">please enter your paragraph:</label>
+			<textarea id="text" name="text" placeholder="Enter the paragraph"></textarea>
+			<button type="submit">Count Lines</button>
+		</form>
+	</div>
+</body>
+</html>

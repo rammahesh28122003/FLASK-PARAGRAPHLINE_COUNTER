@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>line counter<</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<h1><itlaic>...Line Counter...</itlaic></h1>
+		<p>Your paragraph has <mark>{{ lines }}</mark> lines.</p>
+		<a href="/">Enter another paragraph</a>
+	</div>
+</body>
+</html>
